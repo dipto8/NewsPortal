@@ -7,11 +7,12 @@ export default function Navbar() {
     <li><NavLink to="/">Home</NavLink></li>
    <li><NavLink to="about">About</NavLink></li>
    <li><NavLink to="/career">Career</NavLink></li>
+   <li><NavLink to="/Login">Login</NavLink></li>
 
   </>
   return (
-    <div className="navbar bg-base-100">
-      <div className="navbar-start">
+    <div className="navbar bg-base-100  ">
+      <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -41,7 +42,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link><button class="btn btn-outline btn-info">Login</button></Link>
+        <Link to='/Login'><button class="btn btn-outline btn-info">Login</button></Link>
         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
           <img
